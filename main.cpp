@@ -81,7 +81,7 @@ public:
     T z;
     T r, g, b; // Ajout des composantes RGB
     point3D();
-    point3D(T& a, T& b, T& c, T& r, T& g, T& blue);
+    point3D(T& a, T& b, T& c, T& d, T& e, T& f);
 };
 
 template<class T>
@@ -96,13 +96,13 @@ point3D<T>::point3D() :
 }
 
 template<class T>
-point3D<T>::point3D(T& a, T& b, T& c, T& r, T& g, T& blue) :
+point3D<T>::point3D(T& a, T& b, T& c, T& d, T& e, T& f) :
     x(a),
     y(b),
     z(c),
-    r(r),
-    g(g),
-    b(b)
+    r(d),
+    g(e),
+    b(f)
 {
 }
 
